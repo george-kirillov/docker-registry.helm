@@ -32,6 +32,9 @@ service:
   # foo.io/bar: "true"
 ingress:
   enabled: false
+  ## Add ingressClassName to the Ingress
+  ## Can replace the kubernetes.io/ingress.class annotation on v1.18+  
+  ingressClassName: public
   path: /
   # Used to create an Ingress record.
   hosts:
